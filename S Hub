@@ -1,0 +1,118 @@
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local jumping = false
+
+task.spawn(function()
+    local userId = Players:GetUserIdFromNameAsync("EWEX222")
+    local thumbType = Enum.ThumbnailType.HeadShot
+    local thumbSize = Enum.ThumbnailSize.Size420x420
+    local content = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+    StarterGui:SetCore("SendNotification", {
+        Title = "EWEX222",
+        Text = "S Hub Hacker",
+        Icon = content,
+        Duration = 4
+    })
+end)
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
+local Window = Library.CreateLib("S Hub v1", colors)
+local Tab = Window:NewTab("Hacker")
+local Section = Tab:NewSection("Admin mod")
+
+Section:NewTextBox("speed", "TextboxInfo", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+Section:NewButton("Fly", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Section:NewButton("ESP", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/5Q5yC3VZ"))()
+end)
+
+Section:NewButton("invisible", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+end)
+
+
+local Section = Tab:NewSection("Aimbot 👑")
+Section:NewButton("Aimbot", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Universal-For-Mobile-and-PC-29153"))()
+end)
+
+
+local Section = Tab:NewSection("FOV")
+Section:NewTextBox("FOV 1-120", "TextboxInfo", function(txt)
+	local FovNumber = txt --Enter your FOV number here
+local Camera = workspace.CurrentCamera
+Camera.FieldOfView = FovNumber
+end)
+
+
+
+local Tab = Window:NewTab("Evade")
+local Section = Tab:NewSection("Auto jump")
+Section:NewButton("Auto jump", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AutoJump-by-4crucified-51691"))()
+end)
+
+
+local Tab = Window:NewTab("Blox Fruit")
+local Section = Tab:NewSection("Auto Farm AFK")
+Section:NewButton("Farm 🤑", "ButtonInfo", function()
+    _G.Settings = {
+    ["Enable Farm"] = true,
+    ["SnipeLegendaryItem"] = false,
+    ["Choose Team"] = "Marines",
+    ["White Screen"] = false,
+    ["Reset Anti Detect"] = true
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xxhumggxx/SkullHub/refs/heads/main/ChestV2.lua"))()
+end)
+
+
+Section:NewButton("Blox Fruit", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+end)
+
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "OFF"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:Connect(function()
+    if Toggle.Text == "ON" then
+        Toggle.Text = "OFF"
+    else
+        Toggle.Text = "ON"
+    end
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
