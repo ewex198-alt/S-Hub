@@ -24,7 +24,7 @@ end)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
-local Window = Library.CreateLib("S Hub v1", colors)
+local Window = Library.CreateLib("S Hub v1.2", colors)
 local Tab = Window:NewTab("Hacker")
 local Section = Tab:NewSection("Admin mod")
 
