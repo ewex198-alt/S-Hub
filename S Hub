@@ -32,7 +32,7 @@ Section:NewTextBox("speed", "TextboxInfo", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 
-Section:NewButton("Fly", "ButtonInfo", function()
+Section:NewButton("infjump", "ButtonInfo", function()
     local InfiniteJumpEnabled = true
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
