@@ -24,7 +24,7 @@ end)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
-local Window = Library.CreateLib("S Hub v1.2", colors)
+local Window = Library.CreateLib("S Hub v1.4", colors)
 local Tab = Window:NewTab("โซนHacker")
 local Section = Tab:NewSection("โปรHacker")
 
@@ -54,7 +54,7 @@ Section:NewButton("โปรล่องหน", "ButtonInfo", function()
 end)
 
 
-local Section = Tab:NewSection("โปรล็อคเป้า")
+local Section = Tab:NewSection("โปรล็อคเป้า 👑")
 Section:NewButton("โปรล็อคเป้า", "ButtonInfo", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Universal-For-Mobile-and-PC-29153"))()
 end)
@@ -73,6 +73,10 @@ local Tab = Window:NewTab("โปรEvade")
 local Section = Tab:NewSection("โปรEvade")
 Section:NewButton("autoกระโดด", "ButtonInfo", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AutoJump-by-4crucified-51691"))()
+end)
+
+Section:NewButton("โปรEvade", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Nyxarth910/Draconic-Hub-X/refs/heads/main/files/Evade/Overhaul.lua'))()
 end)
 
 
@@ -94,6 +98,13 @@ Section:NewButton("โปรBlox Fruit", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
 end)
 
+
+
+local Tab = Window:NewTab("โปร99 days in the forest")
+local Section = Tab:NewSection("โปร99 days in the forest")
+Section:NewButton("โปร99 days in the forest", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
+end)
 
 
 
