@@ -24,7 +24,7 @@ end)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeianRussell/Kavo-UI-Library/main/Movable.source.lua"))()
-local Window = Library.CreateLib("S Hub v1.4", colors)
+local Window = Library.CreateLib("S Hub v1.6", colors)
 local Tab = Window:NewTab("โซนHacker")
 local Section = Tab:NewSection("โปรHacker")
 
@@ -104,6 +104,13 @@ local Tab = Window:NewTab("โปร99 days in the forest")
 local Section = Tab:NewSection("โปร99 days in the forest")
 Section:NewButton("โปร99 days in the forest", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
+end)
+
+
+local Tab = Window:NewTab("โปรcar dealership tycoon")
+local Section = Tab:NewSection("โปรcar dealership tycoon")
+Section:NewButton("โปรcar dealership tycoonปรับความเร็วของรถ", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thebestpersol/thebestpersol/refs/heads/main/cdt%20accel%20changer"))()
 end)
 
 
