@@ -99,18 +99,30 @@ Section:NewButton("โปรBlox Fruit", "ButtonInfo", function()
 end)
 
 
+Section:NewButton("โปรPVP", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ParadozCode/CentuDox-Hub-Paradoz-Hub/refs/heads/main/CentudoxLoader.xyz", true))()
+end)
 
-local Tab = Window:NewTab("โปร99 days in the forest")
-local Section = Tab:NewSection("โปร99 days in the forest")
-Section:NewButton("โปร99 days in the forest", "ButtonInfo", function()
+
+
+local Tab = Window:NewTab("โปร99 Days in the forest")
+local Section = Tab:NewSection("โปร99 Days in the forest")
+Section:NewButton("โปร99 Days in the forest", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
 end)
 
 
-local Tab = Window:NewTab("โปรcar dealership tycoon")
-local Section = Tab:NewSection("โปรcar dealership tycoon")
-Section:NewButton("โปรcar dealership tycoonปรับความเร็วของรถ", "ButtonInfo", function()
+local Tab = Window:NewTab("โปรCar dealership tycoon")
+local Section = Tab:NewSection("โปรCar dealership tycoon")
+Section:NewButton("โปรCar dealership tycoonปรับความเร็วของรถ", "ButtonInfo", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/thebestpersol/thebestpersol/refs/heads/main/cdt%20accel%20changer"))()
+end)
+
+
+local Tab = Window:NewTab("โปรbedwars")
+local Section = Tab:NewSection("โปรbedwars")
+Section:NewButton("โปรbedwars", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end)
 
 
